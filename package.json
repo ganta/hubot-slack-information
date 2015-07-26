@@ -1,7 +1,7 @@
 {
   "name": "hubot-slack-information",
   "description": "Show an information of the Slack",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Hideki IGARASHI <hideki.develop@gmail.com>",
   "license": "MIT",
 
