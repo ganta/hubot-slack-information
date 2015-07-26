@@ -1,7 +1,6 @@
 # hubot-slack-information
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
-Show an information of the Slack
+Show an information of the Slack.
 
 See [`src/slack-information.coffee`](src/slack-information.coffee) for full documentation.
 
@@ -9,7 +8,7 @@ See [`src/slack-information.coffee`](src/slack-information.coffee) for full docu
 
 In hubot project repo, run:
 
-`npm install hubot-slack-information --save`
+`npm install --save https://github.com/ganta/hubot-slack-information/tarball/v1.0.0`
 
 Then add **hubot-slack-information** to your `external-scripts.json`:
 
@@ -20,15 +19,11 @@ Then add **hubot-slack-information** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> hubot whoami
+hubot>> name: `user1`, id: `U01234567`, real_name: `John Smith`, email: `john.smith@example.com`
 ```
 
-[npm-url]: https://npmjs.org/package/hubot-slack-information
-[npm-image]: http://img.shields.io/npm/v/hubot-slack-information.svg?style=flat
-[travis-url]: https://travis-ci.org/Hideki IGARASHI/hubot-slack-information
-[travis-image]: http://img.shields.io/travis/Hideki IGARASHI/hubot-slack-information/master.svg?style=flat
-[daviddm-url]: https://david-dm.org/Hideki IGARASHI/hubot-slack-information.svg?theme=shields.io
-[daviddm-image]: http://img.shields.io/david/Hideki IGARASHI/hubot-slack-information.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/Hideki IGARASHI/hubot-slack-information
-[coveralls-image]: http://img.shields.io/coveralls/Hideki IGARASHI/hubot-slack-information/master.svg?style=flat
+```
+user1>> hubot who is hans
+hubot>> name: `hans`, id: `U01ABCDEF`, real_name: `Hans Schmidt`, email: `hans.schmidt@example.com`
+```
