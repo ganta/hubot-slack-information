@@ -10,7 +10,4 @@ describe 'slack-information', ->
     require('../src/slack-information')(@robot)
 
   it 'registers a respond listener', ->
-    assert.ok(@robot.respond.calledWith(/hello/))
-
-  it 'registers a hear listener', ->
-    assert.ok(@robot.hear.calledWith(/orly/))
+    assert.ok(@robot.respond.calledWith(/whoami/))

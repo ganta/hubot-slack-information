@@ -1,22 +1,13 @@
 # Description
 #   Show an information of the Slack
 #
-# Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
-#
 # Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
-#
-# Notes:
-#   <optional notes required for the script>
+#   hubot whoami - Show the user information of you
 #
 # Author:
-#   Hideki IGARASHI[@<org>]
+#   Hideki IGARASHI <hideki.develop@gmail.com>
 
 module.exports = (robot) ->
-  robot.respond /hello/, (msg) ->
-    msg.reply "hello!"
-
-  robot.hear /orly/, ->
-    msg.send "yarly"
+  robot.respond /whoami/, (msg) ->
+    user = msg.message.user
+    msg.send "name: `#{user.name}`, id: `#{user.id}`, real_name: `#{user.real_name}`, email: `#{user.email_address}`"
