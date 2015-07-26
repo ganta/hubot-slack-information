@@ -5,7 +5,7 @@
   "author": "Hideki IGARASHI <hideki.develop@gmail.com>",
   "license": "MIT",
 
-  "keywords": ["hubot","hubot-scripts","slack"],
+  "keywords": ["hubot", "hubot-scripts", "slack"],
 
   "repository": {
     "type": "git",
