@@ -11,3 +11,6 @@ describe 'slack-information', ->
 
   it 'registers a respond listener', ->
     assert.ok(@robot.respond.calledWith(/whoami/))
+
+  it 'registers a respond listener', ->
+    assert.ok(@robot.respond.calledWith(/who is (.*)/))
