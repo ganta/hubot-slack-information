@@ -9,11 +9,11 @@
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hideki IGARASHI/hubot-slack-information.git"
+    "url": "https://github.com/ganta/hubot-slack-information.git"
   },
 
   "bugs": {
-    "url": "https://github.com/Hideki IGARASHI/hubot-slack-information/issues"
+    "url": "https://github.com/ganta/hubot-slack-information/issues"
   },
 
   "dependencies": {
